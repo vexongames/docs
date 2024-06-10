@@ -17,7 +17,10 @@ function Article() {
       path == "/" ? "index.md" : `${path.slice(1, path.length)}.md`
     }`;
     fetch(file).then((response) => {
-      if (response.headers.get("Content-Type") == "text/markdown") {
+      if (
+        response.headers.get("Content-Type") == "text/markdown" ||
+        response.ok
+      ) {
         response.text().then((text) => {
           setMarkdown(text);
           setFound(true);
