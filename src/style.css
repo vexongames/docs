@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #171717;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+:root {
+  --link: #4d58ff;
+}
+
+p {
+  font-size: 0.875rem;
+  color: #bbb;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

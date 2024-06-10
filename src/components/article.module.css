@@ -1,0 +1,47 @@
+.article {
+  margin-left: calc(275px + 150px);
+  display: inline-block;
+  text-align: left;
+  max-width: 45vw;
+  margin-top: 50px;
+}
+
+pre {
+  min-width: 500px;
+  max-width: 45vw;
+}
+
+pre code {
+  border-radius: 3px;
+  font-size: 0.875rem;
+}
+
+section {
+  background-color: #222;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0;
+  border-radius: 2px;
+  border: dashed 2px #333;
+}
+
+section a {
+  font-weight: 700;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+section a:hover {
+  background-color: #272727;
+  filter: brightness(1.3);
+  text-decoration: none;
+}
+
+section a p {
+  margin: 5px 0 0;
+  color: white;
+}
+
+section a img {
+  height: 65px;
+}
