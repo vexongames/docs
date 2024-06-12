@@ -7,6 +7,7 @@ export default defineConfig({
   root: "src",
   publicDir: "../public",
   build: {
+    cssMinify: true,
     outDir: "../dist",
     emptyOutDir: true,
     minify: "terser",
