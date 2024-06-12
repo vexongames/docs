@@ -6,10 +6,7 @@ Add our script to handle the SDK in the documents head or end of body.
 <script src="//sdk.vexon.games/v1.js"></script>
 ```
 
-In any linked javascript files add something like this. If it doesn't
-work you may need to implement the functionality to your game. Once
-complete, we will handle the rest as soon as the game is on our
-servers.
+In a javascript file it should look like this.
 
 ```javascript
 function DoneLoading() {
@@ -17,8 +14,11 @@ function DoneLoading() {
 }
 
 function ShowAd() {
-  window.VexonSDK.AdBreak(() => {
-    // Reward functionality
+  window.VexonSDK.AdBreak(<"display" | "rewarded">, (complete) => {
+    // Pause
+    if (complete) {
+      // Resume & Reward functionality
+    }
   });
 }
 ```

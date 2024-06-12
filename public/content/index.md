@@ -18,3 +18,9 @@ Start by selecting your game's engine below.
     <p>Unity</p>
   </a>
 </section>
+
+### Questions?
+
+**What is the difference between "display" and "rewarded" ad types?**
+
+_A display ad can only be shown 45 seconds after the one before and should be used in scenarios like when a user dies, or starting a new level. Whereas, rewarded should be used when activated by the user for an extra life or unlocking a skin via advertisement._

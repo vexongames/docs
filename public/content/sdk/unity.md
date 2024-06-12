@@ -10,14 +10,17 @@ Same as the HTML5 SDK just put **_Instance_** before everything.
 using UnityEngine;
 using VexonSDK;
 public class Demo: MonoBehaviour {
-  void Start() {
-    VexonSDK.Instance.Ready();
-  }
+    void Start() {
+      VexonSDK.Instance.Ready();
+    }
 
-  void DisplayAd() {
-    VexonSDK.Instance.AdBreak(() => {
-        // Reward functionality
-    })
-  }
+    void DisplayAd() {
+      VexonSDK.Instance.AdBreak(<"display" | "rewarded">, () => {
+        // Pause
+        if (complete) {
+          // Resume & Reward functionality
+        }
+      })
+    }
 }
 ```
