@@ -17,11 +17,8 @@ function DoneLoading() {
 }
 
 function ShowAd() {
-  window.VexonSDK.AdBreak((onReward) => {
-    // Add your functionality to pause and save for midgame here.
-    onReward(() => {
-      // Reward functionality
-    });
+  window.VexonSDK.AdBreak(() => {
+    // Reward functionality
   });
 }
 ```

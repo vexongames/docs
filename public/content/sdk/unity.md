@@ -15,11 +15,8 @@ public class Demo: MonoBehaviour {
   }
 
   void DisplayAd() {
-    VexonSDK.Instance.AdBreak((onReward) => {
-      // Make sure to pause and save HERE
-      onReward(() => {
+    VexonSDK.Instance.AdBreak(() => {
         // Reward functionality
-      });
     })
   }
 }
