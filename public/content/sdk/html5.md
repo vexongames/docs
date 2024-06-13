@@ -14,11 +14,10 @@ function DoneLoading() {
 }
 
 function ShowAd() {
-  window.VexonSDK.AdBreak(<"display" | "rewarded">, (complete) => {
+  window.VexonSDK.AdBreak(<"display" | "rewarded">, () => {
     // Pause
-    if (complete) {
-      // Resume & Reward functionality
-    }
+  }).then(() => {
+    // Resume & Reward functionality if ad type is rewarded
   });
 }
 ```

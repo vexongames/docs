@@ -4,23 +4,22 @@
 
 ### Usage:
 
-Same as the HTML5 SDK just put **_Instance_** before everything.
+Same as the HTML5 SDK just put **Instance** before everything and **the promise is a parameter** since C# has a stricter syntax than javascript although it is possible it is not great for the game's performance.
 
 ```csharp
 using UnityEngine;
 using VexonSDK;
 public class Demo: MonoBehaviour {
-    void Start() {
-      VexonSDK.Instance.Ready();
-    }
+  void Start() {
+    VexonSDK.Instance.Ready();
+  }
 
-    void DisplayAd() {
-      VexonSDK.Instance.AdBreak(<"display" | "rewarded">, () => {
-        // Pause
-        if (complete) {
-          // Resume & Reward functionality
-        }
-      })
-    }
+  void DisplayAd() {
+    VexonSDK.Instance.AdBreak(<"display" | "rewarded"> , () => {
+      // Pause
+    }, () => {
+      // Resume & Reward functionality if ad type is rewarded
+    });
+  }
 }
 ```
